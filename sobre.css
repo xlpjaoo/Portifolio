@@ -1,0 +1,119 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Botão menu */
+#botaoMenu {
+  font-size: 26px;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+  transition: background 0.3s ease;
+}
+
+#botaoMenu:hover {
+  background-color: #6d28d9;
+}
+
+/* Menu lateral */
+#menuLateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background-color: #2a2a3d;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 999;
+}
+
+#menuLateral.aberto {
+  transform: translateX(0);
+}
+
+#menuLateral a {
+  color: #c3c3c3;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: background 0.2s ease;
+  font-weight: 500;
+}
+
+#menuLateral a:hover {
+  background-color: #3e3e58;
+  color: #ffffff;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #7c3aed;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+/* Container de conteúdo */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #2e2e44;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Imagem */
+.imagem {
+  width: 220px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+}
+
+/* Texto */
+.texto {
+  font-size: 16px;
+  color: #c3c3c3;
+  text-align: justify;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  color: #a1a1b5;
+  font-size: 14px;
+  border-top: 1px solid #3f3f55;
+}
